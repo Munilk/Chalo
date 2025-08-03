@@ -6,5 +6,9 @@ public List<Product> getallproducts(){
 return pds;
 
 }
+public boolean addproduct(Product product){
+    pds.add(product);
+    return true;
+}
 
 }

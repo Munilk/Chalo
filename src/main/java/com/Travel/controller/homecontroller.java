@@ -6,6 +6,18 @@ private Services serv;
 @GetMapping("/home")
 public List<Product> home(){
 return serv.getallproducts();
+@PutMapping("/addproduct")
+public String addproduct(Product pd){
+    boolean a=serv.addproduct(pd);
+    if(a){
+        return "Product is added successfully ";
+    
+    }
+    else{
+        return "product is not added";
+    }
+
+}
 
 }
 }
