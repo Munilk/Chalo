@@ -10,4 +10,15 @@ public boolean addproduct(Product product){
     boolean a=(boolean)pds.add(product);
     return a;
 }
+
+public Product searchprd(int prid){
+    for(Product ps=pds){
+        if(ps.getId()==prid){
+            return ps;
+        }
+        else{
+            return null;
+        }
+    }
+}
 }

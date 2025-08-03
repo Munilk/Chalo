@@ -15,7 +15,9 @@ public boolean addproduct(Product product){
         return false;
     }
 }
-
+public Product searprd(int a){
+    return repo.searchprd(a);
+}
 
 
 }

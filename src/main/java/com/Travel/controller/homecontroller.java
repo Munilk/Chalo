@@ -19,5 +19,10 @@ public String addproduct(Product pd){
 
 }
 
+@PostMapping("/product/{pid}")
+public Product searchproduct(@PathVariable int pid){
+    return serv.searprd(pid);
+}
+
 }
 }
