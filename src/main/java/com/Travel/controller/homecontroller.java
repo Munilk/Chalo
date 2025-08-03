@@ -1,11 +1,12 @@
 
 @controller
 public class homecontroller{
+    
 @Autowired
 private Services serv;
 @GetMapping("/home")
 public List<Product> home(){
-return serv.getallproducts();
+    return serv.getallproducts();
 @PutMapping("/addproduct")
 public String addproduct(Product pd){
     boolean a=serv.addproduct(pd);
