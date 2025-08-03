@@ -1,6 +1,7 @@
 @Repository
 
-class Repositary{
+//public interface Repositary extends JPARepository throws IOException{
+public class Repository{
 List<Product> pds=new ArrayList<>(Arrays.asList(new Product(1,"Lenova Tab","One of the best android tablet for the students",250090.78,6,true)));
 public List<Product> getallproducts(){
 return pds;
