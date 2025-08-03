@@ -7,8 +7,7 @@ return pds;
 
 }
 public boolean addproduct(Product product){
-    pds.add(product);
-    return true;
+    boolean a=(boolean)pds.add(product);
+    return a;
 }
-
 }
