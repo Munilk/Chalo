@@ -1,7 +1,7 @@
 
 @controller
 public class homecontroller{
-    
+
 @Autowired
 private Services serv;
 @GetMapping("/home")
@@ -23,6 +23,11 @@ public String addproduct(Product pd){
 @PostMapping("/product/{pid}")
 public Product searchproduct(@PathVariable int pid){
     return serv.searprd(pid);
+}
+
+@UpdateMapping("/product")
+public String updateproduct(Product newprd){
+    return serv.uptprd(newprd);
 }
 
 }

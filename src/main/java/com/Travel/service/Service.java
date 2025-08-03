@@ -18,6 +18,8 @@ public boolean addproduct(Product product){
 public Product searprd(int a){
     return repo.searchprd(a);
 }
-
+public String uptprd(Product nprd){
+    return repo.updateproduct(nprd);
+}
 
 }

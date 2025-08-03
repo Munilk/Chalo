@@ -21,4 +21,19 @@ public Product searchprd(int prid){
         }
     }
 }
+
+public String updateproduct(Product nprddetails){
+    for(Products p=pds){
+        if(p.getId()==nprddetails.getId()){
+            p.setName(nprddetails.getName());
+            p.setDescr(nprddetails.getDescr());
+            p.setPrice(nprddetails.getPrice());
+            p.gsetQuantity(nprddetails.getQuantity());
+            return "Product is updated";
+        }
+        else{
+            return "Prpduct is not available in website";
+        }
+    }
+}
 }
