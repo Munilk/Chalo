@@ -1,10 +1,19 @@
-import org.springframework.web.bind.annotation.*;
+/*import org.springframework.web.bind.annotation.*;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.AllArgsConstructor;
 import org.springframework.http.*;
+*/
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
 
+// Also import your own classes:
+import com.Travel.service.Services; // adjust the package if needed
+import com.Travel.model.Product;    // adjust the package if needed
 /*
 
 @controller
