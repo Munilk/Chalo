@@ -14,7 +14,7 @@ private Services serv;
 public List<Product> home(){
     return serv.getallproducts();
 @PutMapping("/addproduct")
-public String addproduct(Product pd){
+public String addproduct(@RequestBody Product pd){
     boolean a=serv.addproduct(pd);
     if(a){
         return "Product is added successfully ";
@@ -32,7 +32,7 @@ public Product searchproduct(@PathVariable int pid){
 }
 
 @UpdateMapping("/product")
-public String updateproduct(Product newprd){
+public String updateproduct(@RequestBody Product newprd){
     return serv.uptprd(newprd);
 }
 
