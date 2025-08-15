@@ -20,7 +20,7 @@ import com.Travel.model.Product;    // adjust the package if needed
 public class homecontroller{
 
 @Autowired
-private Services serv;
+private service serv;
 @GetMapping("/home")
 public List<Product> home(){
     return serv.getallproducts();
@@ -59,7 +59,7 @@ public String updateproduct(@RequestBody Product newprd){
 public class HomeController {
 
     @Autowired
-    private Services serv;
+    private service serv;
 
     @GetMapping("/home")
     public List<Product> home() {
