@@ -2,26 +2,26 @@ import lombok.Data;
 import lombok.AllArgsConstructor;
 import lombok.NoArgsConstructor;
 
-
-
-//hi hello 
-
-
-@Data
-@Getter
-@Setter
-@AllArgsConstructor
-@NoArgsConstructor
+import javax.persistence.*;
 
 import java.util.*;
 
+@Entity
 class Product{
+@Id
 private int id;
 private String name;
 private String descr;
 private double price;
 private int quantity;
 private boolean avail;
+
+public Product(int a,String b,String c,double d,int e,boolean f){
+
+this.id=a;this.name=b;this.descr=c;this.price=d;this.quantity=e;this.avail=f;
+}
+
+
 
 }
 
