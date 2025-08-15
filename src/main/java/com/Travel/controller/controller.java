@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /*import org.springframework.web.bind.annotation.*;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -6,12 +7,22 @@ import org.springframework.http.*;
 */
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.*;
+=======
+
+
+//
+
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+>>>>>>> refs/remotes/origin/Littleboy
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
 // Also import your own classes:
+<<<<<<< HEAD
 import com.Travel.service.service; // adjust the package if needed
 import com.Travel.model.Product;    // adjust the package if needed
 /*
@@ -51,12 +62,20 @@ public String updateproduct(@RequestBody Product newprd){
 }
 
 */
+=======
+import com.Travel.service.service // adjust the package if needed
+import com.Travel.model.product;    // adjust the package if needed
+>>>>>>> refs/remotes/origin/Littleboy
 
 
 
 @RestController
 @RequestMapping("/api")
+<<<<<<< HEAD
 public class HomeController {
+=======
+public class controller {
+>>>>>>> refs/remotes/origin/Littleboy
 
     @Autowired
     private service serv;
