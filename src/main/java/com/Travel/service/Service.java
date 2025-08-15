@@ -3,7 +3,7 @@
 
 public class Service{
 @Autowired
-private Repository rep;
+private repo rep;
 public List<Product> getallproducts(){
 return rep.getallproducts();
 }
