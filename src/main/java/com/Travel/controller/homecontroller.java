@@ -17,7 +17,7 @@ import com.Travel.model.product;    // adjust the package if needed
 /*
 
 @controller
-public class homecontroller{
+public class controller{
 
 @Autowired
 private service serv;
