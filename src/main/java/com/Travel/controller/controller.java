@@ -18,7 +18,7 @@ import com.Travel.model.product;    // adjust the package if needed
 
 @RestController
 @RequestMapping("/api")
-public class HomeController {
+public class controller {
 
     @Autowired
     private service serv;
