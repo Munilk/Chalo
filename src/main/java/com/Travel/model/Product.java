@@ -1,14 +1,24 @@
+
+
+
+package com.Travel.model;
+
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
 import lombok.Data;
-import lombok.AllArgsConstructor;
 import lombok.NoArgsConstructor;
-
-import javax.persistence.*;
-
-import java.util.*;
+import lombok.AllArgsConstructor;
 
 @Entity
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+
 class Product{
 @Id
+
 private int id;
 private String name;
 private String descr;
@@ -27,6 +37,42 @@ this.id=a;this.name=b;this.descr=c;this.price=d;this.quantity=e;this.avail=f;
 
 
 /*
+package com.Travel.model;
+
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+import lombok.AllArgsConstructor;
+
+@Entity
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+public class Product {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private int id;
+
+    private String name;
+    private String description;
+    private double price;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 package com.Travel.model;
 
 import javax.persistence.Entity;
