@@ -2,6 +2,8 @@ import java.util.*;
 import org.springframework.web.bind.annotation.*;
 
 
+import com.Travel.service.service; // adjust the package if needed import com.Travel.model.Product; 
+// adjust the pack
 
 
 
@@ -20,7 +22,7 @@ public boolean addproduct(@ResponseBody Product product){
 }
 
 public Product searchprd(@PathVaraible int prid){
-    for(Product ps=pds){
+    for(Product ps:pds){
         if(ps.getId()==prid){
             return ps;
         }
@@ -31,7 +33,7 @@ public Product searchprd(@PathVaraible int prid){
 }
 
 public String updateproduct(@ResponseBody Product nprddetails){
-    for(Products p=pds){
+    for(Products p:pds){
         if(p.getId()==nprddetails.getId()){
             p.setName(nprddetails.getName());
             p.setDescr(nprddetails.getDescr());
