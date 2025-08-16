@@ -12,8 +12,6 @@ import com.Travel.model.Product;    // adjust the pack
 
 
 
-import com.Travel.service.service // adjust the package if needed
-import com.Travel.model.product;    // adjust the package if needed
 
 
 
