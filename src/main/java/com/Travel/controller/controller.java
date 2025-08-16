@@ -5,15 +5,6 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
-
-import com.travel.service.service; // adjust the package if needed
-import com.travel.model.Product;    // adjust the pack
-
-
-
-
-
-
 @RestController
 @RequestMapping("/api")
 public class controller {
