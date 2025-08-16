@@ -1,18 +1,23 @@
 
 
 
-//hi hello 
+package com.Travel.model;
 
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+import lombok.AllArgsConstructor;
 
+@Entity
 @Data
-@Getter
-@Setter
-@AllArgsConstructor
 @NoArgsConstructor
-
-import java.util.*;
+@AllArgsConstructor
 
 class Product{
+@Id
 private int id;
 private String name;
 private String descr;
@@ -20,4 +25,124 @@ private double price;
 private int quantity;
 private boolean avail;
 
+public Product(int a,String b,String c,double d,int e,boolean f){
+
+this.id=a;this.name=b;this.descr=c;this.price=d;this.quantity=e;this.avail=f;
 }
+
+
+
+}
+
+
+/*
+package com.Travel.model;
+
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+import lombok.AllArgsConstructor;
+
+@Entity
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+public class Product {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private int id;
+
+    private String name;
+    private String description;
+    private double price;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+package com.Travel.model;
+
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+
+@Entity
+public class Product {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private int id;
+
+    private String name;
+    private String description;
+    private double price;
+
+    // Constructors
+    public Product() {}
+
+    public Product(int id, String name, String description, double price) {
+        this.id = id;
+        this.name = name;
+        this.description = description;
+        this.price = price;
+    }
+
+    // Getters and Setters
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
+    public double getPrice() {
+        return price;
+    }
+
+    public void setPrice(double price) {
+        this.price = price;
+    }
+
+    // toString (optional)
+    @Override
+    public String toString() {
+        return "Product{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", description='" + description + '\'' +
+                ", price=" + price +
+                '}';
+    }
+}
+
+*/

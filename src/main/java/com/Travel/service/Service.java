@@ -3,12 +3,12 @@
 
 public class Service{
 @Autowired
-private Repository rep;
+private repo rep;
 public List<Product> getallproducts(){
 return rep.getallproducts();
 }
 public boolean addproduct(Product product){
-    if (repo.addproduct(product)){
+    if (rep.addproduct(product)){
         return true;
     }
     else{
@@ -16,10 +16,10 @@ public boolean addproduct(Product product){
     }
 }
 public Product searprd(int a){
-    return repo.searchprd(a);
+    return rep.searchprd(a);
 }
 public String uptprd(Product nprd){
-    return repo.updateproduct(nprd);
+    return rep.updateproduct(nprd);
 }
 
 }
