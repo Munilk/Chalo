@@ -7,8 +7,8 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 
-import com.Travel.service.service; // adjust the package if needed
-import com.Travel.model.Product;    // adjust the pack
+import com.travel.service.service; // adjust the package if needed
+import com.travel.model.Product;    // adjust the pack
 
 
 

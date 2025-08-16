@@ -1,7 +1,7 @@
 
 
 
-package com.Travel.model;
+package com.travel.model;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
@@ -16,7 +16,7 @@ import lombok.AllArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 
-class Product{
+public class Product{
 @Id
 private int id;
 private String name;
