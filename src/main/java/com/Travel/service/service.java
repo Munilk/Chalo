@@ -1,7 +1,7 @@
 
 @Service
 
-public class Service{
+public class service{
 @Autowired
 private repo rep;
 public List<Product> getallproducts(){
