@@ -7,7 +7,7 @@ private repo rep;
 public List<Product> getallproducts(){
 return rep.getallproducts();
 }
-public  addproduct(Product prot){
+public  boolean addproduct(Product prot){
     if (rep.addproduct(prot)){
         return true;
     }
