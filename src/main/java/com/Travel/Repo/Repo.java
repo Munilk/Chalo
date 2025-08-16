@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.*;
 @Repository
 //
 //public interface Repositary extends JPARepository throws IOException{
-public class Repo{
+public class repo{
 List<Product> pds=new ArrayList<>(Arrays.asList(new Product(1,"Lenova Tab","One of the best android tablet for the students",250090.78,6,true)));
 public List<Product> getallproducts(){
 return pds;
