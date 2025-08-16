@@ -29,8 +29,9 @@ public class controller {
 
     @PostMapping("/addproduct")
     public ResponseEntity<String> addProduct(@RequestBody Product pd) {
-        boolean a = serv.addproduct(pd);
-        if (a) {
+        
+        serv.addproduct(pd);
+        if (true) {
             return ResponseEntity.ok("Product is added successfully");
         } else {
             return ResponseEntity.status(HttpStatus.BAD_REQUEST).body("Product is not added");
