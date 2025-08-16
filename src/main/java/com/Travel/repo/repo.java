@@ -15,8 +15,8 @@ return pds;
 
 }
 public boolean addproduct(@ResponseBody Product product){
-    boolean a=(boolean)pds.add(product);
-    return a;
+    pds.add(product);
+    return true;
 }
 
 public Product searchprd(@PathVaraible int prid){
